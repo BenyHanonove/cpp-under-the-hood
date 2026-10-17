@@ -1,0 +1,9 @@
+# Build outputs
+build/
+*.o
+*.out
+Advanced C & C++ for Low-Level Systems/missions/01-matrix-perimeter-scanner/main
+
+# Python
+__pycache__/
+*.pyc

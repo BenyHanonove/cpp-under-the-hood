@@ -1,0 +1,44 @@
+# Formatting rules from STYLE.md §6. Applies to every mission below this folder.
+Language: Cpp
+BasedOnStyle: LLVM
+Standard: Latest
+
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ColumnLimit: 100
+AccessModifierOffset: -4
+
+# Opening brace on the same line; `else` and `catch` on the line after the closing brace.
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterClass: false
+  AfterControlStatement: Never
+  AfterEnum: false
+  AfterFunction: false
+  AfterNamespace: false
+  AfterStruct: false
+  AfterUnion: false
+  BeforeCatch: true
+  BeforeElse: true
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+
+# Braces on every control-flow body, even single statements.
+InsertBraces: true
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortBlocksOnASingleLine: Never
+AllowShortFunctionsOnASingleLine: Inline
+
+# `int* p`, `const PacketBuffer& buf`.
+PointerAlignment: Left
+ReferenceAlignment: Pointer
+DerivePointerAlignment: false
+
+# No blank line right after `{`.
+KeepEmptyLines:
+  AtStartOfBlock: false
+
+# Keep the include groups from §5 as written.
+IncludeBlocks: Preserve
